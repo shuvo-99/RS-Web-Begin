@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Card Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .card {
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+      .card:hover {
+        background-color: #f0f0f0;
+      }
+      .card1 {
+        background-color: #ffcccc;
+      }
+      .card2 {
+        background-color: #ccffcc;
+      }
+      .card3 {
+        background-color: #ccccff;
+      }
+      .card1:hover {
+        background-color: #ff9999;
+      }
+      .card2:hover {
+        background-color: #99ff99;
+      }
+      .card3:hover {
+        background-color: #9999ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card1">
+        <h2>Card 1</h2>
+        <p>This is the first card.</p>
+      </div>
+      <div class="card card2">
+        <h2>Card 2</h2>
+        <p>This is the second card.</p>
+      </div>
+      <div class="card card3">
+        <h2>Card 3</h2>
+        <p>This is the third card.</p>
+      </div>
+    </div>
+  </body>
+</html>
