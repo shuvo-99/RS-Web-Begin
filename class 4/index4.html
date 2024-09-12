@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Layout</title>
+    <style>
+      /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        } */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .box {
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .layout {
+        display: flex;
+        gap: 20px;
+      }
+      .main-content {
+        flex: 2;
+      }
+      .sidebar {
+        flex: 1;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 768px) {
+        .layout {
+          flex-direction: column;
+        }
+        .box {
+          background-color: #e0e0e0;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+        .box {
+          padding: 10px;
+          background-color: #d0d0d0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Responsive Layout</h1>
+      <div class="layout">
+        <main class="main-content box">
+          <h2>Main Content</h2>
+          <p>
+            This is the main content area. It takes up more space on larger
+            screens.
+          </p>
+        </main>
+        <aside class="sidebar box">
+          <h2>Sidebar</h2>
+          <p>
+            This is a sidebar. On smaller screens, it will appear below the main
+            content.
+          </p>
+        </aside>
+      </div>
+      <footer class="box">
+        <p>
+          Resize the browser window to see how the layout changes at different
+          screen sizes.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

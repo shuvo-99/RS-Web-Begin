@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Example</title>
+  <style>
+    /* Default styles for all devices */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      background-color: lightgray;
+      padding: 20px;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    .box {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: orange;
+    }
+
+    /* Media query for screens larger than 768px (tablet and above) */
+    @media only screen and (min-width: 768px) {
+      .container {
+        background-color: lightblue;
+      }
+
+      .box {
+        width: 45%;
+        display: inline-block;
+      }
+    }
+
+    /* Media query for screens larger than 1024px (desktop and above) */
+    @media only screen and (min-width: 1024px) {
+      .container {
+        background-color: lightgreen;
+      }
+
+      .box {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Media Query Example</h1>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <p>Resize the browser window to see the layout change!</p>
+
+</body>
+</html>
